@@ -96,16 +96,6 @@ poliguide/
 
 ---
 
-## 🔧 自定义域名
-
-如需绑定自定义域名（如 `poliguide.com`）：
-
-1. 修改 `vite.config.pages.ts`，将 `base: "/poliguide/"` 改为 `base: "/"`
-2. 在 `client/public/` 下新建 `CNAME` 文件，内容填写你的域名
-3. 在 DNS 服务商添加 CNAME 记录指向 `liujieranjerry-lgtm.github.io`
-4. 推送代码，等待 GitHub Actions 自动重新部署
-
----
 
 ## 📄 许可证
 
