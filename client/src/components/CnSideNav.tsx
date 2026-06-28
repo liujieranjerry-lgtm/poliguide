@@ -102,9 +102,9 @@ export default function CnSideNav() {
       <div className="px-4 py-4 border-t space-y-2" style={{ borderColor: "rgba(196,30,58,0.2)" }}>
         <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.2)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '4px' }}>其他国家</div>
         {[
-          { href: '/', flag: '🇺🇸', label: '美国政治制度' },
-          { href: '/germany', flag: '🇩🇪', label: '德国政治制度' },
-          { href: '/japan', flag: '🇯🇵', label: '日本政治制度' },
+          { href: '/#/', flag: '🇺🇸', label: '美国政治制度' },
+          { href: '/#/germany', flag: '🇩🇪', label: '德国政治制度' },
+          { href: '/#/japan', flag: '🇯🇵', label: '日本政治制度' },
         ].map((item) => (
           <a
             key={item.href}
