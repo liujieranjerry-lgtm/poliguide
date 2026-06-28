@@ -1,13 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle, Home } from "lucide-react";
-import { useHashLocation } from "wouter/use-hash-location";
-
 export default function NotFound() {
-  const [, setLocation] = useHashLocation();
-
   const handleGoHome = () => {
-    setLocation("/");
+    window.location.hash = "#/";
   };
 
   return (
