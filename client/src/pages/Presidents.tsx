@@ -3,7 +3,6 @@
 // 紧凑时间线 + 可展开卡片 + 党派色彩标识
 
 import { useState, useMemo } from "react";
-import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { presidents, partyStats, type President } from "@/lib/presidentsData";
 
@@ -226,11 +225,11 @@ export default function Presidents() {
       {/* Side nav */}
       <aside className="fixed left-0 top-0 h-full w-56 bg-[#080e1a] border-r border-white/8 z-30 hidden lg:flex flex-col py-6 overflow-y-auto">
         <div className="px-4 mb-6">
-          <Link href="/#/">
+          <a href="/#/">
             <div className="flex items-center gap-2 text-blue-400/70 hover:text-blue-400 transition-colors cursor-pointer mb-3 text-xs">
               ← 返回美国政治制度
             </div>
-          </Link>
+          </a>
           <div className="text-xs font-bold text-white/40 uppercase tracking-widest">美国政治制度</div>
           <div className="text-xs text-white/20 mt-1">历任总统全览</div>
         </div>
@@ -255,9 +254,9 @@ export default function Presidents() {
         </div>
         <div className="mt-auto px-4 space-y-1 border-t border-white/10 pt-4">
           <div className="text-[10px] text-slate-600 uppercase tracking-widest mb-2">其他国家</div>
-          <Link href="/#/china"><div className="text-xs text-slate-500 hover:text-red-400 transition-colors cursor-pointer py-1">🇨🇳 中国政治制度</div></Link>
-          <Link href="/#/germany"><div className="text-xs text-slate-500 hover:text-yellow-400 transition-colors cursor-pointer py-1">🇩🇪 德国政治制度</div></Link>
-          <Link href="/#/japan"><div className="text-xs text-slate-500 hover:text-pink-400 transition-colors cursor-pointer py-1">🇯🇵 日本政治制度</div></Link>
+          <a href="/#/china"><div className="text-xs text-slate-500 hover:text-red-400 transition-colors cursor-pointer py-1">🇨🇳 中国政治制度</div></a>
+          <a href="/#/germany"><div className="text-xs text-slate-500 hover:text-yellow-400 transition-colors cursor-pointer py-1">🇩🇪 德国政治制度</div></a>
+          <a href="/#/japan"><div className="text-xs text-slate-500 hover:text-pink-400 transition-colors cursor-pointer py-1">🇯🇵 日本政治制度</div></a>
         </div>
       </aside>
 
@@ -363,11 +362,11 @@ export default function Presidents() {
 
         {/* Footer */}
         <div className="mt-12 pt-8 border-t border-white/8 text-center">
-          <Link href="/#/">
+          <a href="/#/">
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-blue-500/30 bg-blue-500/10 text-blue-400 text-sm cursor-pointer hover:bg-blue-500/20 transition-colors">
               ← 返回美国政治制度全解
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </div>
