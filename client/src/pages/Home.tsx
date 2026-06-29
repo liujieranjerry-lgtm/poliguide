@@ -700,13 +700,9 @@ export default function Home() {
             <p className="text-sm mb-4" style={{ color: 'rgba(255,255,255,0.6)' }}>
               与本指南配套的中国政治制度全解，涵盖党的领导体制、人大制度、选举制度等16个核心章节
             </p>
-            <a
-              href="#/china"
-              className="inline-block px-6 py-3 rounded-lg font-bold text-white transition-all hover:opacity-90"
-              style={{ background: '#C41E3A' }}
-            >
+            <button onClick={() => { window.location.hash = '#/china'; }} className="inline-block px-6 py-3 rounded-lg font-bold text-white transition-all hover:opacity-90">
               查看中国政治制度全解 →
-            </a>
+            </button>
           </div>
         </div>
 
@@ -718,7 +714,7 @@ export default function Home() {
               <p className="text-base font-bold text-white mb-1">历任美国总统全览</p>
               <p className="text-xs text-white/50">47位总统完整档案 · 可按党派、时代、姓名筛选 · 点击展开任内大事与名言</p>
             </div>
-            <a href="#/presidents" className="flex-shrink-0 px-4 py-2 rounded-lg font-bold text-white text-sm transition-all hover:opacity-90" style={{ background: '#1d4ed8' }}>查看全部 →</a>
+            <button onClick={() => { window.location.hash = '#/presidents'; }} className="flex-shrink-0 px-4 py-2 rounded-lg font-bold text-white text-sm transition-all hover:opacity-90">查看全部 →</button>
           </div>
         </div>
 
@@ -728,12 +724,12 @@ export default function Home() {
             <div className="p-5 rounded-xl border border-yellow-500/30 bg-yellow-500/5 text-center">
               <p className="text-lg font-bold mb-2 text-white">🇩🇪 德国政治制度</p>
               <p className="text-sm mb-4 text-white/60">联邦议会制 · 两票混合比例制 · 建设性不信任投票 · 16联邦州</p>
-              <a href="#/germany" className="inline-block px-5 py-2 rounded-lg font-bold text-white transition-all hover:opacity-90" style={{ background: '#B8860B' }}>查看德国政治制度全解 →</a>
+              <button onClick={() => { window.location.hash = '#/germany'; }} className="inline-block px-5 py-2 rounded-lg font-bold text-white transition-all hover:opacity-90">查看德国政治制度全解 →</button>
             </div>
             <div className="p-5 rounded-xl border border-pink-500/30 bg-pink-500/5 text-center">
               <p className="text-lg font-bold mb-2 text-white">🇯🇵 日本政治制度</p>
               <p className="text-sm mb-4 text-white/60">议会内阁制 · 象征天皇制 · 自民党长期执政 · 宪法第九条</p>
-              <a href="#/japan" className="inline-block px-5 py-2 rounded-lg font-bold text-white transition-all hover:opacity-90" style={{ background: '#C0406A' }}>查看日本政治制度全解 →</a>
+              <button onClick={() => { window.location.hash = '#/japan'; }} className="inline-block px-5 py-2 rounded-lg font-bold text-white transition-all hover:opacity-90">查看日本政治制度全解 →</button>
             </div>
           </div>
         </div>

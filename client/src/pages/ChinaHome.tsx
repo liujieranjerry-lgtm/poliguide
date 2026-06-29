@@ -837,13 +837,9 @@ export default function ChinaHome() {
               <p className="text-sm mb-4" style={{ color: "rgba(255,255,255,0.6)" }}>
                 与本指南配套的美国政治制度全解，同样包含17个章节和完整的交互式可视化
               </p>
-              <a
-                href="#/"
-                className="inline-block px-6 py-3 rounded-lg font-bold text-white transition-all hover:opacity-90"
-                style={{ background: "#1565C0" }}
-              >
+              <button onClick={() => { window.location.hash = '#/'; }} className="inline-block px-6 py-3 rounded-lg font-bold text-white transition-all hover:opacity-90">
                 🇺🇸 查看美国政治制度全解 →
-              </a>
+              </button>
             </div>
           </div>
         </Section>
@@ -854,12 +850,12 @@ export default function ChinaHome() {
             <div className="p-5 rounded-xl border border-yellow-500/30 bg-yellow-500/5 text-center">
               <p className="text-base font-bold mb-2 text-white">🇩🇪 德国政治制度</p>
               <p className="text-xs mb-3 text-white/60">联邦议会制 · 两票混合比例制 · 16联邦州</p>
-              <a href="#/germany" className="inline-block px-4 py-2 rounded-lg font-bold text-white text-sm transition-all hover:opacity-90" style={{ background: '#B8860B' }}>查看德国全解 →</a>
+              <button onClick={() => { window.location.hash = '#/germany'; }} className="inline-block px-4 py-2 rounded-lg font-bold text-white text-sm transition-all hover:opacity-90">查看德国全解 →</button>
             </div>
             <div className="p-5 rounded-xl border border-pink-500/30 bg-pink-500/5 text-center">
               <p className="text-base font-bold mb-2 text-white">🇯🇵 日本政治制度</p>
               <p className="text-xs mb-3 text-white/60">议会内阁制 · 象征天皇制 · 自民党长期执政</p>
-              <a href="#/japan" className="inline-block px-4 py-2 rounded-lg font-bold text-white text-sm transition-all hover:opacity-90" style={{ background: '#C0406A' }}>查看日本全解 →</a>
+              <button onClick={() => { window.location.hash = '#/japan'; }} className="inline-block px-4 py-2 rounded-lg font-bold text-white text-sm transition-all hover:opacity-90">查看日本全解 →</button>
             </div>
           </div>
         </div>

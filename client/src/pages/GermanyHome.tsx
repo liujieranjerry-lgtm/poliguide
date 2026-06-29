@@ -38,11 +38,11 @@ function SideNav({ activeSection }: { activeSection: string }) {
   return (
     <nav className="fixed left-0 top-0 h-full w-56 bg-[#0A0F1A]/95 backdrop-blur border-r border-[#D4A017]/20 z-40 flex flex-col py-6 overflow-y-auto hidden lg:flex">
       <div className="px-4 mb-6">
-        <a href="#/">
+        <button onClick={() => { window.location.hash = '#/'; }}>
           <div className="flex items-center gap-2 text-[#D4A017]/70 hover:text-[#D4A017] transition-colors cursor-pointer mb-1">
             <span className="text-xs">← 返回首页</span>
           </div>
-        </a>
+        </button>
         <div className="flex items-center gap-2 mt-3">
           <span className="text-2xl">🇩🇪</span>
           <div>
@@ -69,15 +69,15 @@ function SideNav({ activeSection }: { activeSection: string }) {
       </div>
       <div className="px-4 mt-4 space-y-1 border-t border-white/10 pt-4">
         <div className="text-[10px] text-slate-600 uppercase tracking-widest mb-2">其他国家</div>
-        <a href="#/">
+        <button onClick={() => { window.location.hash = '#/'; }}>
           <div className="text-xs text-slate-500 hover:text-blue-400 transition-colors cursor-pointer py-1">🇺🇸 美国政治制度</div>
-        </a>
-        <a href="#/china">
+        </button>
+        <button onClick={() => { window.location.hash = '#/china'; }}>
           <div className="text-xs text-slate-500 hover:text-red-400 transition-colors cursor-pointer py-1">🇨🇳 中国政治制度</div>
-        </a>
-        <a href="#/japan">
+        </button>
+        <button onClick={() => { window.location.hash = '#/japan'; }}>
           <div className="text-xs text-slate-500 hover:text-pink-400 transition-colors cursor-pointer py-1">🇯🇵 日本政治制度</div>
-        </a>
+        </button>
       </div>
     </nav>
   );

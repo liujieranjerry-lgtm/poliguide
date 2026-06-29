@@ -101,21 +101,21 @@ export default function SideNav({ activeSection, onNavigate }: SideNavProps) {
       </div>
       {navContent}
       <div className="px-4 py-3 border-t border-white/8">
-        <a href="#/presidents" className="flex items-center gap-2 text-xs text-blue-400/60 hover:text-blue-400 transition-colors">
+        <button onClick={() => { window.location.hash = '#/presidents'; }} className="flex items-center gap-2 text-xs text-blue-400/60 hover:text-blue-400 transition-colors">
           <span>🏛️</span><span>历任总统全览</span>
-        </a>
+        </button>
       </div>
       <div className="px-4 py-4 border-t border-white/8 space-y-2">
         <div className="text-[10px] text-white/20 uppercase tracking-widest mb-1">其他国家</div>
-        <a href="#/china" className="flex items-center gap-2 text-xs text-white/40 hover:text-white/80 transition-colors">
+        <button onClick={() => { window.location.hash = '#/china'; }} className="flex items-center gap-2 text-xs text-white/40 hover:text-white/80 transition-colors">
           <span>🇨🇳</span><span>中国政治制度</span>
-        </a>
-        <a href="#/germany" className="flex items-center gap-2 text-xs text-white/40 hover:text-white/80 transition-colors">
+        </button>
+        <button onClick={() => { window.location.hash = '#/germany'; }} className="flex items-center gap-2 text-xs text-white/40 hover:text-white/80 transition-colors">
           <span>🇩🇪</span><span>德国政治制度</span>
-        </a>
-        <a href="#/japan" className="flex items-center gap-2 text-xs text-white/40 hover:text-white/80 transition-colors">
+        </button>
+        <button onClick={() => { window.location.hash = '#/japan'; }} className="flex items-center gap-2 text-xs text-white/40 hover:text-white/80 transition-colors">
           <span>🇯🇵</span><span>日本政治制度</span>
-        </a>
+        </button>
       </div>
     </aside>
   );
