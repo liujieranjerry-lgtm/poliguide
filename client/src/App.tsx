@@ -9,21 +9,18 @@ import JapanHome from "./pages/JapanHome";
 import Presidents from "./pages/Presidents";
 import NotFound from "./pages/NotFound";
 import { useState, useEffect } from "react";
-
-// 原生 Hash 路由：读取 window.location.hash 决定渲染哪个页面
-// URL 格式：/#/  /#/china  /#/germany  /#/japan  /#/presidents
-function getHashPath(): string {
-  const hash = window.location.hash; // e.g. "#/china" or ""
-  if (!hash || hash === "#" || hash === "#/") return "/";
-  return hash.slice(1); // 去掉开头的 "#"，得到 "/china"
-}
+import { getCurrentPath } from "./lib/hashNav";
 
 function Router() {
-  const [path, setPath] = useState(getHashPath);
+  const [path, setPath] = useState(getCurrentPath);
 
   useEffect(() => {
-    const onHashChange = () => setPath(getHashPath());
+    const onHashChange = () => setPath(getCurrentPath());
     window.addEventListener("hashchange", onHashChange);
+    // 初始化时如果 hash 为空，设置为 #/
+    if (!window.location.hash || window.location.hash === '#') {
+      window.location.hash = '#/';
+    }
     return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
 

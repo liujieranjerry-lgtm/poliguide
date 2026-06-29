@@ -38,7 +38,7 @@ function SideNav({ activeSection }: { activeSection: string }) {
   return (
     <nav className="fixed left-0 top-0 h-full w-56 bg-[#060D1A]/95 backdrop-blur border-r border-[#E8344E]/20 z-40 flex flex-col py-6 overflow-y-auto hidden lg:flex">
       <div className="px-4 mb-6">
-        <a href="/#/">
+        <a href="#/">
           <div className="flex items-center gap-2 text-[#E8344E]/70 hover:text-[#E8344E] transition-colors cursor-pointer mb-1">
             <span className="text-xs">← 返回首页</span>
           </div>
@@ -69,13 +69,13 @@ function SideNav({ activeSection }: { activeSection: string }) {
       </div>
       <div className="px-4 mt-4 space-y-1 border-t border-white/10 pt-4">
         <div className="text-[10px] text-slate-600 uppercase tracking-widest mb-2">其他国家</div>
-        <a href="/#/">
+        <a href="#/">
           <div className="text-xs text-slate-500 hover:text-blue-400 transition-colors cursor-pointer py-1">🇺🇸 美国政治制度</div>
         </a>
-        <a href="/#/china">
+        <a href="#/china">
           <div className="text-xs text-slate-500 hover:text-red-400 transition-colors cursor-pointer py-1">🇨🇳 中国政治制度</div>
         </a>
-        <a href="/#/germany">
+        <a href="#/germany">
           <div className="text-xs text-slate-500 hover:text-yellow-400 transition-colors cursor-pointer py-1">🇩🇪 德国政治制度</div>
         </a>
       </div>
@@ -795,7 +795,7 @@ export default function JapanHome() {
                 { href: "/china", flag: "🇨🇳", name: "中国政治制度", color: "#E07B54" },
                 { href: "/germany", flag: "🇩🇪", name: "德国政治制度", color: "#D4A017" },
               ].map((l) => (
-                <a href={"/#" + l.href}>
+                <a href={"#" + l.href}>
                   <div className="px-5 py-3 rounded-xl border cursor-pointer transition-all hover:scale-105"
                     style={{ borderColor: l.color + "40", background: l.color + "10" }}>
                     <span className="text-2xl mr-2">{l.flag}</span>
